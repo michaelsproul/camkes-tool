@@ -112,6 +112,11 @@ int
     /*? me.interface.name ?*/__run(void)
 /*- endif -*/
 {
+    /*- if me.interface.name == "clientx" -*/
+    if (true) {
+        return 0;
+    }
+    /*- endif -*/
 
     /*# Check any typedefs we have been given are not arrays. #*/
     /*? array_check.perform_array_typedef_check(me.interface.type) ?*/
